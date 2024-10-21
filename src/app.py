@@ -13,7 +13,9 @@ def perfil_JSON(id_perfil):
 def index():
     return render_template('home.html')
 
-
+@app.route('/pagina-politicos')
+def politicos():
+    return render_template('politicos.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
